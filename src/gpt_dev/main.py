@@ -7,7 +7,7 @@ from openai_service import OpenAIService
 
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
-GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', "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")
+GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 OWNER = os.environ.get('OWNER', "shruti222patel")
 REPO_NAME = os.environ.get('REPO_NAME', "repo-gpt")
 BASE_URL = os.environ.get('BASE_URL', "https://github.com")

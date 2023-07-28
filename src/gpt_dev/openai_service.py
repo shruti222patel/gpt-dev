@@ -51,15 +51,13 @@ If no improvements or suggestions are identified,  write "No suggestions.". Your
         )
         return response.choices[0]["message"]["content"]
 
+
     @retry(wait=wait_random_exponential(min=0.2, max=60), stop=stop_after_attempt(6))
     def summarize(
-        self, diff: str, system_prompt: str = CODE_REVIEW_SYSTEM_PROMPT
+        self, comments: [str], system_prompt: str = CODE_REVIEW_SYSTEM_PROMPT
     ):
-        query = f"""Review the code below and provide code suggestions.  If there are no improvements or suggestions, write "No suggestions.".
-        ```
-        {diff}
-        ```
-        """
+
+        query = "\n* ".join(comments)
 
         response = openai.ChatCompletion.create(
             messages=[
