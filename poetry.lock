@@ -743,13 +743,13 @@ files = [
 
 [[package]]
 name = "pygithub"
-version = "1.59.0"
+version = "1.59.1"
 description = "Use the full Github API v3"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "PyGithub-1.59.0-py3-none-any.whl", hash = "sha256:126bdbae72087d8d038b113aab6b059b4553cb59348e3024bb1a1cae406ace9e"},
-    {file = "PyGithub-1.59.0.tar.gz", hash = "sha256:6e05ff49bac3caa7d1d6177a10c6e55a3e20c85b92424cc198571fd0cf786690"},
+    {file = "PyGithub-1.59.1-py3-none-any.whl", hash = "sha256:3d87a822e6c868142f0c2c4bf16cce4696b5a7a4d142a7bd160e1bdf75bc54a9"},
+    {file = "PyGithub-1.59.1.tar.gz", hash = "sha256:c44e3a121c15bf9d3a5cc98d94c9a047a5132a9b01d22264627f58ade9ddc217"},
 ]
 
 [package.dependencies]
@@ -956,6 +956,17 @@ dev = ["py-make (>=0.1.0)", "twine", "wheel"]
 notebook = ["ipywidgets (>=6)"]
 slack = ["slack-sdk"]
 telegram = ["requests"]
+
+[[package]]
+name = "unidiff"
+version = "0.7.5"
+description = "Unified diff parsing/metadata extraction library."
+optional = false
+python-versions = "*"
+files = [
+    {file = "unidiff-0.7.5-py2.py3-none-any.whl", hash = "sha256:c93bf2265cc1ba2a520e415ab05da587370bc2a3ae9e0414329f54f0c2fc09e8"},
+    {file = "unidiff-0.7.5.tar.gz", hash = "sha256:2e5f0162052248946b9f0970a40e9e124236bf86c82b70821143a6fc1dea2574"},
+]
 
 [[package]]
 name = "urllib3"
@@ -1168,4 +1179,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ea2fc0ab18b8eaf357c78d4b94d9c6aee4a95b6f03b9c5ec78faba071c0e194f"
+content-hash = "88691f8e37d82ef70641124e8963488b2c3e9ab436ebb54d87156eac9f1cffef"
